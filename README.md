@@ -20,7 +20,7 @@ Some guidelines and tips:
 
 OK, here we go.
 
-# Title of my project
+# Investigating collagen type IV phylogenetics in early branching animals to gain insight on extracellular matrix development
 
 ## Introduction and Goals
 
