@@ -42,8 +42,14 @@ In most animals there are six types of collagen IV, called alpha chains. I plan 
 These phylogenetic analyses will begin to uncover the evolution of collagen IV in early branching animals. Understanding the emergence of network-forming collagen IV will allow greater insight into the origins of the ECM toolkit, ctenophores, and the transitions to multicellularity.
 
 ## Methods
+To start, I identified taxa to include in the analysis of collagen IV evolution in early animals. I used NCBI to identify the genomes of several unicellular metazoan relatives, such as Monosiga brevicollis (choanoflagellate), Salpingoeca rosetta (choanoflagellate), and Capsaspora owczarzaki (filasterean), all published ctenophore genomes, Beroe ovata, Beroe forskalii, Pleurobrachia bachei, and Mnemiopsis leidyi, the only published placazoan genome, Trichoplax adhaerens, several published sponge genomes, Amphimedon queenslandica, Aplysina aerophoba, and Ephydatia muelleri, several cnidarian genomes, Sanderia malayensis, Chrysaora chesapeakei, Hydra vulgaris, and one bilaterian Drosophila melanogaster.
 
-The tools I used were... See analysis files at (links to analysis files).
+Then, I used BLAST with these genomes and bait sequences from various sequences discussed above. To build a tree, I used the BLAST results from the BLAST with the bait sequence that produced hits for the most taxa. I noted which taxa produced hits for which bait sequences in the file BLAST_info.xlsx. The Nematostella vectensis alpha-5 chain sequence was one of the sequences that produced the most hits, so I used those results. I aligned the hits using the Multiple Sequence Aligner on BLAST, then I exported this file (animal.alignment.raw.fasta) and uploaded it to the Grace HPC. I used this code to fix the name headings for each sequence:
+
+sed -E 's/>[a-zA-Z]+\|([a-zA-Z0-9\.]+)\|.+\[organism=([a-zA-Z0-9]+) ([a-zA-Z0-9]+).+?/>\2_\3_\1/g' animal.alignment.raw.fasta > animal.alignment.fasta
+
+This produced a new file (animal.alignment.fasta) that I then used to infer a tree with IQ-Tree with the script job_animal.sh. I also used the ultrafast bootstrapping on BLAST. This produced many files, including animal.alignment.fasta.treefile, that I used to visualize the tree on RStudio. 
+
 
 ## Results
 
