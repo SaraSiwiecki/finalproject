@@ -48,14 +48,26 @@ Then, I used BLAST with these genomes and bait sequences from various sequences 
 
 sed -E 's/>[a-zA-Z]+\|([a-zA-Z0-9\.]+)\|.+\[organism=([a-zA-Z0-9]+) ([a-zA-Z0-9]+).+?/>\2_\3_\1/g' animal.alignment.raw.fasta > animal.alignment.fasta
 
-This produced a new file (animal.alignment.fasta) that I then used to infer a tree with IQ-Tree with the script job_animal.sh. I also used the ultrafast bootstrapping on BLAST. This produced many files, including animal.alignment.fasta.treefile, that I used to visualize the tree on RStudio. 
+This produced a new file (animal.alignment.fasta) that I then used to infer a tree with IQ-Tree with the script job_animal.sh. I also used the ultrafast bootstrapping on BLAST. This produced many files, including animal.alignment.fasta.treefile, that I used to visualize the tree on RStudio (finalproject_MVA.rmd). 
+
+Here is the plan for the rest of the project:
+
+For each alpha sequence, I will add more taxa and
+1. Create a repository of bait sequences and denote which taxa have significant hits
+2. Collect data from BLAST with bait sequences that have significant hits to get sequence alignments
+3. Use the alignments with IQ-Tree and bootstrapping to build trees with bootstrap values
+4. Make a clear figure showing which taxa do not have which collagen IV chains
+5. Use a quantitative comparison, such as Robinson-Foulds distances, to compare what the trees look like with different alpha chain sequences
 
 
 ## Results
 
-The tree in Figure 1... 
+Figure 1: Tree from BLAST using nematostella vectensis alpha-5 sequence 
 
 ![Figure1](animal_tree.jpg)
+
+The bootstrap values are quite low so the tree is very variable, but this will likely be improved as I run more analyses and use bait sequences that have matches with higher percentage identities. I also plan to perform a similar analysis as above with more cnidarians, bilaterians, and unicellular relatives to improve the resolution of the tree. I am currently using all available genomes for ctenophores, sponges, and placazoans. 
+
 
 ## Discussion
 
