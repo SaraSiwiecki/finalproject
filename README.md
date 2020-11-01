@@ -55,7 +55,7 @@ This produced a new file (animal.alignment.fasta) that I then used to infer a tr
 
 The tree in Figure 1... 
 
-![Figure1](animal_tree.png)
+![Figure1](animal_tree.jpg)
 
 ## Discussion
 
