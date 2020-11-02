@@ -54,7 +54,7 @@ I aligned the hits using the Multiple Sequence Aligner on BLAST, then I exported
 
 sed -E 's/>[a-zA-Z]+\|([a-zA-Z0-9\.]+)\|.+\[organism=([a-zA-Z0-9]+) ([a-zA-Z0-9]+).+?/>\2_\3_\1/g' animal.alignment.raw.fasta > animal.alignment.fasta
 
-This produced a new file (animal.alignment.fasta) that I then used to infer a tree with IQ-Tree with the script job_animal.sh. I also used the ultrafast bootstrapping on BLAST. This produced many files, including animal.alignment.fasta.treefile, that I used to visualize the tree on RStudio (finalproject_MVA.rmd). 
+This produced a new file (animal.alignment.fasta) that I then used to infer a tree with IQ-Tree with the script job_animal.sh. I also used the ultrafast bootstrapping on BLAST. This produced many files, including animal.alignment.fasta.treefile, that I used to visualize the consensus tree on RStudio (finalproject_MVA.rmd). 
 
 Here is the plan for the rest of the project:
 
@@ -71,6 +71,8 @@ For each alpha sequence, I will add more taxa and
 Figure 1: Tree from BLAST using nematostella vectensis alpha-5 sequence 
 
 ![Figure1](animal_tree.jpg)
+
+Newick format: (Drosophila_melanogaster_BT053743.1:5.0485576518,(Amphimedon_queenslandica_XM019998698.1:2.5962504748,((Hydra_vulgaris_XM012710296.1:3.3292460108,Trichoplax_adhaerens_XM002116260.1:3.1753180100)64:1.8018490920,Ephydatia_muelleri_X69818.1:5.1000457493)63:1.3674924680)47:3.3244908050,((Salpingoeca_rosetta_XM004998771.1:1.4935654389,Beroe_forskalii_MG655624.1:0.0026869678)21:0.0002960999,Monosiga_brevicollis_AF538053.1:1.5137278979)15:1.5618986580)
 
 The bootstrap values are quite low so the tree is very variable, but this will likely be improved as I run more analyses and use bait sequences that have matches with higher percentage identities. I also plan to perform a similar analysis as above with more cnidarians, bilaterians, and unicellular relatives to improve the resolution of the tree. I am currently using all available genomes for ctenophores, sponges, and placazoans. 
 
