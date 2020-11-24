@@ -66,6 +66,18 @@ For each alpha sequence, I will add more taxa and
 5. Use a quantitative comparison, such as Robinson-Foulds distances, to compare what the trees look like with different alpha chain sequences
 
 
+For the alpha-1 chain, I performed BLAST with many different bait sequences including those from Drosophila melanogaster, Hydra vulgaris, Amphimedon queenslandica, Nematostella vectensis, and others (included in BLAST_Results_Updated.xlsx). The hydra vulgaris bait sequence was one of the sequences that produced results for the highest number of taxa, so I decided to use the results for that BLAST to produce a tree. 
+
+Organism: Hydra vulgaris
+Gene: Collagen IV alpha-1 chain precursor 
+Accession ID: NP_001296590.1
+
+For the alpha-2 chain, I performed BLAST with many bait sequences again and found Drosophila melanogaster to have hits with the most taxa, so I used those results to make a tree.
+
+Organism: Drosophila melanogaster
+Gene: Collagen IV alpha-2 chain
+Accession ID: AAB64082.1
+
 ## Results
 
 Figure 1: Tree from BLAST using nematostella vectensis alpha-5 sequence 
