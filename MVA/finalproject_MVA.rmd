@@ -1,0 +1,40 @@
+---
+title: "finalproject"
+output: html_document
+---
+
+```{r setup, echo=FALSE, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(ape)
+```
+
+
+## Evaluating the phylogenetics of collagen IV in early animal evolution
+I plan to use BLAST to build sequence alignments of collagen IV nucleotide sequences in early evolution animals to investigate the evolution of collagen IV at the origination of animal multicellularity. I am evaluating multiple taxa in ctenophora, porifera, cnidaraia, and bilateria for these analyses with unicellular relatives of metazoans as outgroups. After sequence alignment, I am using IQ-Tree on Yale's high performance cluster, Grace, to produce trees based on these alignments with bootstrap analyses. In most animals there are six types of collagen IV, called alpha chains. I plan to build trees based on each type of chain. Considering that there are large variations in sequences and there is not great resolution of collagen IV in the most basal animal taxa, such as ctenophores and placazoans, it is difficult to definitely use a specific bait sequence, so I plan try many different bait sequences, including collagen IV from Homo sapiens, Drosophila melanogaster, Hydra vulgaris, and Nemtostella vectensis, to resolve sequence alignments. 
+
+
+Firstly, I performed BLAST of a Nematostella vectensis collagen IV alpha-5 chain bait sequence and aligned sequences from many early animal taxa. 
+
+Organism: Nematostella vectensis 
+
+Gene ID: 5505427
+
+Accession Number: XM_001626218.2
+
+I used this bait sequence and used BLAST to find similar sequences in the genomes of Monosiga brevicollis (choanoflagellate, unicellular metazoan relative), Salpingoeca rosetta (choanoflagellate, unicellular metazoan relative), Capsaspora owczarzaki (filasterean, unicellular metazoan relative), Beroe ovata (ctenophora), Beroe forskalii (ctenophora), Pleurobrachia bachei (ctenophora), Mnemiopsis leidyi (ctenophora), Trichoplax adhaerens (placazoa), Amphimedon queenslandica (porifera), Aplysina aerophoba (placazoa), Ephydatia muelleri (porifera), Sanderia malayensis (cnidaria), Chrysaora chesapeakei (cnidaria), Hydra vulgaris (cnidaria), Drosophila melanogaster (bilateria).
+
+I found hits with Drosophila melanogaster, Amphimedon queenslandica, Hydra vulgaris, Salpingoeca rosetta, Ephydatia muelleri, Monosiga brevicollis, 
+Trichoplax adhaerens, and Beroe forskalii. I aligned the sequences with the highest percentage identity and ran these through IQ-Tree with bootstrapping.
+
+Here is the tree for this alignment:
+```{r fig.width=5, fig.height=5}
+
+# Insert code here to view the phylogeny
+phy = read.tree("animal.alignment.fasta.treefile")
+plot(phy)
+nodelabels(phy$node.label)
+
+```
+
+The bootstrap values are quite low so the tree is quite variable, but this will likely be improved as I run more analyses and use bait sequences that have matches with higher percentage identities. I also plan to perform a similar analysis as above with more cnidarians, bilaterians, and unicellular relatives to improve the resolution of the tree. I am currently using all available genomes for ctenophores, sponges, and placazoans. 
