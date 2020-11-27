@@ -41,42 +41,66 @@ In most animals there are six types of collagen IV, called alpha chains (Boudko 
 These phylogenetic analyses will begin to uncover the evolution of collagen IV in our most distant animal relatives. Understanding the emergence of network-forming collagen IV will allow greater insight into the origins of the ECM toolkit, ctenophores, and the transitions to multicellularity.
 
 ## Methods
-To start, I identified taxa to include in the analysis of collagen IV evolution in our most distant animal relatives. I used NCBI to identify the genomes of several unicellular metazoan relatives, such as Monosiga brevicollis (choanoflagellate), Salpingoeca rosetta (choanoflagellate), and Capsaspora owczarzaki (filasterean), all published ctenophore genomes, Beroe ovata, Beroe forskalii, Pleurobrachia bachei, and Mnemiopsis leidyi, the only published placazoan genome, Trichoplax adhaerens, several published sponge genomes, Amphimedon queenslandica, Aplysina aerophoba, and Ephydatia muelleri, several cnidarian genomes, Sanderia malayensis, Chrysaora chesapeakei, and Hydra vulgaris, and one bilaterian, Drosophila melanogaster.
+To start, I identified taxa to include in the analysis of collagen IV evolution in our most distant animal relatives based off of genomes present in NCBI (Fig. X). I used NCBI to identified the genomes of several close unicellular metazoan relatives, such as choanoflagellates and filastereans, and several distant relatives, such as bacteria. For metazoans, I used all published ctenophore genomes, the only published placazoan genome, several published sponge genomes, several cnidarian genomes, and several bilaterian genomes. 
 
-Then, I used BLAST with these genomes and bait sequences from various sequences discussed above. To build a tree, I used the BLAST results from the BLAST run with the bait sequence that produced hits for the most taxa. I noted which taxa produced hits for which bait sequences in the file BLAST_info.xlsx. The Nematostella vectensis alpha-5 chain sequence was one of the sequences that produced the most hits for the few bait sequences I have tried so far, so I used those results. 
+![FigureX](FinalProkect_Table1.png)
 
-Organism: Nematostella vectensis
-Gene: Collagen IV alpha-5 chain
-Gene ID: 5505427
-Accession ID: XM_001626218.2
+Then, I used BLAST with these genomes and bait sequences from various sequences discussed above. For each alpha chain sequence, I tried about five different bait sequences to run through protein BLAST. I used the following parameters for my protein BLAST searches: automatically adjusted parameters for short input sequences, expect threshold of 10, word size of two, zero max matches in a query range, BLOSUM62 matrix, existence 11 and extension 1 for gap costs, conditional compositional score matrix adjustment, and no filtering or masking. I optimized these parameters to produce the most hits possible since many of these organisms, such as ctenophores, typically have matches that are short and thus difficult to find. 
 
-I aligned the hits using the Multiple Sequence Aligner on BLAST, then I exported this file (animal.alignment.raw.fasta) and uploaded it to the Grace HPC. I used this code to fix the name headings for each sequence:
+For each bait sequence, I documented how many taxa produced hits through the BLAST search. A significant hit was considered a hit with an E value of <0.0001. The data for the bait sequences used and the number of taxa with hits for each bait sequence is documented in the file BLAST_Results_Updated.xlsx. The information for each bait sequence that I used for protein BLAST that was then used to build a tree using IQ-Tree is listed below:
 
-sed -E 's/>[a-zA-Z]+\|([a-zA-Z0-9\.]+)\|.+\[organism=([a-zA-Z0-9]+) ([a-zA-Z0-9]+).+?/>\2_\3_\1/g' animal.alignment.raw.fasta > animal.alignment.fasta
-
-This produced a new file (animal.alignment.fasta) that I then used to infer a tree with IQ-Tree with the script job_animal.sh. I also used the ultrafast bootstrapping on BLAST. This produced many files, including animal.alignment.fasta.treefile, that I used to visualize the consensus tree on RStudio (finalproject_MVA.rmd). 
-
-Here is the plan for the rest of the project:
-
-For each alpha sequence, I will add more taxa and
-1. Create a repository of bait sequences and denote which taxa have significant hits
-2. Collect data from BLAST with bait sequences that have significant hits to get sequence alignments
-3. Use the alignments with IQ-Tree and bootstrapping to build trees with bootstrap values
-4. Make a clear figure showing which taxa do not have which collagen IV chains
-5. Use a quantitative comparison, such as Robinson-Foulds distances, to compare what the trees look like with different alpha chain sequences
-
-
-For the alpha-1 chain, I performed BLAST with many different bait sequences including those from Drosophila melanogaster, Hydra vulgaris, Amphimedon queenslandica, Nematostella vectensis, and others (included in BLAST_Results_Updated.xlsx). The hydra vulgaris bait sequence was one of the sequences that produced results for the highest number of taxa, so I decided to use the results for that BLAST to produce a tree. 
+For the alpha-1 chain, I performed BLAST with many different bait sequences for collagen IV alpha-1 chains including those from Drosophila melanogaster, Hydra vulgaris, Homo sapiens, Amphimedon queenslandica, Nematostella vectensis, and others (included in BLAST_Results_Updated.xlsx). The hydra vulgaris (a cnidarian) bait sequence was one of the sequences that produced results for the highest number of taxa, so I decided to use the results for that BLAST to produce a tree. 
 
 Organism: Hydra vulgaris
+
 Gene: Collagen IV alpha-1 chain precursor 
+
 Accession ID: NP_001296590.1
 
-For the alpha-2 chain, I performed BLAST with many bait sequences again and found Drosophila melanogaster to have hits with the most taxa, so I used those results to make a tree.
+For the alpha-2 chain, I performed BLAST with collagen IV alpha-2 chains from many bait sequences again, including Homo sapiens, Drosophila melanogaster, Mus musculus, and Hydra vulgaris. I found the collagen type IV alpha-2 chain sequence from Drosophila melanogaster (a bilaterian) to have hits with the most taxa, so I used those results to make a tree.
 
 Organism: Drosophila melanogaster
+
 Gene: Collagen IV alpha-2 chain
+
 Accession ID: AAB64082.1
+
+For the alpha-3 chain, I performed BLAST with collagen IV alpha-3 chains from Homo sapiens, Hydra vulgaris, Nematostella vectensis, and Acropora millepora. The collagen type IV alpha-3 chain isoform X1 from Nematostella vectensis (a cnidarian) produced hits for the most taxa, so I used those results for IQ-Tree. 
+
+Organism: Nematostella vectensis
+
+Gene: Collagen IV alpha-3 chain isoform X1
+
+Accession ID: XP_001639420.1
+
+For the alpha-4 chain, I performed BLAST with collagen IV alpha-4 chains from Fasciola giganta, Homo sapiens, Dendronephthya gigantea, Danio rerio, and Bubalus bubalis. The Homo sapiens (a bilaterian) collagen IV alpha-4 chain precursor produced hits for the most taxa, so I used those results for IQ-Tree. 
+
+Organism: Homo sapiens
+
+Gene: Collagen IV alpha-4 chain precursor
+
+Accession ID: NP_000083.3
+
+For the alpha-5 chain, I performed BLAST with collagen IV alpha-5 chains from Homo sapiens, Nematostella vectensis, Exaiptasia diaphana, Obricella faveolata, and Geotrypetes seraphini. The collagen IV alpha-5 chain-like sequence from Obricella faveolata (a cnidarian) produced the taxa with the most hits, so I used those results for IQ-Tree. 
+
+Organism: Obricella faveolata
+
+Gene: Collagen IV alpha-5 chain-like
+
+Accession ID: XP_020621459.1
+
+For the alpha-6 chain, I performed BLAST with collagen IV alpha-6 chains from Mus musculus, Homo sapiens, Acropora millepora, Danio rerio, and Monopterus albus. All sequences produced a the same number of results, so I decided to use the Homo sapiens (a bilaterian) collagen IV alpha-6 chain sequence results for IQ-Tree. 
+
+Organism: Homo sapiens
+
+Gene: Collagen IV alpha-6 chain
+
+Accession ID: NP_001274687.1
+
+I used the BLAST results from the BLAST run with the bait sequence that produced hits for the most taxa. Once I identified a bait sequence that had hits for the most taxa, I used the Multiple Sequence Aligner on BLAST to align the sequences for all taxa. These files are denoted as alpha1_hydra_precursor_align_clean.fa, alpha2_drosophila_align_clean.fa, alpha3_nematostella_align_clean.fa, alpha4_humans_align_clean.fa, alpha5_obricella_align_clean.fa, alpha6_humans_align_clean.fa. 
+
+I then uploaded these files to the Grace HPC. I then used to infer a tree with IQ-Tree with the script job_animal.sh. I also used the ultrafast bootstrapping on BLAST. This produced many files, including .treefiles that I used to visualize the consensus tree for each simulation on RStudio (finalproject.rmd). 
+
 
 ## Results
 
