@@ -117,6 +117,7 @@ Legend: Check marks indicate that there were significant hits found. X-marks ind
 I found that conserved sequences for each alpha chain were found in almost all bacteria, choanoflagellates, and metazoan taxa tested. Details for each BLAST search are located in the file BLAST_Updated_Results.xlsx. Particularly, E. coli had hits for all alpha chain sequences and V. cholera and S. aureus each had a few regions homologous to a few of the alpha sequences. Both choanoflagellate species had hits for all alpha chains. The one filasterean tested had hits for only alpha chains 3 and 5. Ctenophores had no hits for any alpha chains. All other metazoans phyla had hits for all alpha chains. For each alpha chain, one porifera species did not have any hits and 1-2 cnidarians did not have any hits. All bilaterians tested had hits for all alpha sequences.
 
 Each consensus tree has been annotated for better visualization. A yellow star indicates a clade of metazoan relatives. A purple star indicates a clade of metazoans. A pink star indicates a metazoan relative. A blue star indicates a metazoan.
+
 Figure 2: Alpha-1 Consensus Tree
 ![Figure2](FinalProject_Alpha1.png)
 
@@ -138,7 +139,8 @@ Figure 7: Alpha-6 Consensus Tree
 
 ## Discussion
 
-These results indicate...
+### Presence of collagen IV alpha chains in metazoans and metazoan relatives
+From the initial evaluation of BLAST results described in Table 2, it appears that most metazoans that were tested have either all, or some combination of most collagen type IV alpha chains. I found genetic regions homologous to alpha chains in placozoans, poriferans, cnidarians, and bilateria. Some poriferan and cnidarian species did not have homologous regions to certain alpha chains, but all bilateria had homologous regions to all alpha chains. Surprisingly, none of the four tested ctenophore species had any matches, even extremely small matches, with any alpha chains. This contradicts the conclusions of Churches et al. (2012) and Fidler et al. (2017 & 2018), where the authors performed similar analyses with two of the ctenophore species I tested (P. bachei and M. leidyi) and were able to identify NC1 (noncollagenous 1) regions associated with collagen IV via BLAST. In both of these papers, the authors argue that the presence of NC1 regions indicates presence of collagen type IV. While this may be true, it seems that if there are collagen type IV genes in ctenophores, they must be quite different from the collagen type IV genomes of other metazoans because they are not resolvable via BLAST, indicating that any similarity between ctenophore collagen type IV and collagen type IV of other metazoans must be extremely low. Churches et al. (2012) further identified Gly-X-Y repeats, the traditional triplet that defines a collagenous region, in P. bachei, which further led the authors to conclude the presence of collagen type IV in ctenophores. My results do not contradict their results, but do contradict their conclusions. It appears that while ctenophores may have collageneous genes, it seems that they do not have any of the usual conserved regions of collagen IV commonly found in other organisms. This raises many questions about the composition of ctenophore mesoglea. Ctenophore mesoglea is made of bulk extracellular matrix material (Pang et al., 2008), yet ctenophores do not appear to have any usual ECM proteins, such as collagen IV. It would be interesting to repeat the methods of Churches et al. (2012) to identify Gly-X-Y repeats in other ctenophore species and apply biochemical and biophysical methods to the ctenophore mesoglea to identify if their bulk ECM is collagenous or if it is unique from the ECM of other metazoans.
 
 The biggest difficulty in implementing these analyses was...
 
@@ -148,6 +150,8 @@ If I did these analyses again, I would...
 Boudko, S.P.; Danylevych, N.; Hudson, B.G.; Pedchenko, V.K. (2018) Basement membrane collagen IV: Isolation of functional domains. Methods in Cell Biology 143, 171-185. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5828530/
 
 Brunet, T. & King, N. (2017) The origin of animal multicellularity and cell differentiation. Developmental Cell 43, 2, 124-140. https://pubmed.ncbi.nlm.nih.gov/29065305/
+
+Churches, N.; Swalla, B.J.; Moroz, L.; Kohn, A. (2012) Collagen type IV in the Ctenophore Pleurobrachia bachei. Marine Genomics Research Apprenticeship. Unpublished. https://digital.lib.washington.edu/researchworks/bitstream/handle/1773/27030/Churches_2012.pdf;sequence=1
 
 Dunn, C.W.; Hejnol, A.; Matus, D.Q.; Pang, K.; Browne, W.E.; Smith, S.A.; et al. (2008) Broad phylogenomic sampling improves resolution of the animal tree of life. Nature letters 452, 7188, 745-749. https://www.nature.com/articles/nature06614
 
