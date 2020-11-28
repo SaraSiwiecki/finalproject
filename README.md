@@ -97,9 +97,9 @@ Gene: Collagen IV alpha-6 chain
 
 Accession ID: NP_001274687.1
 
-I used the BLAST results from the BLAST run with the bait sequence that produced hits for the most taxa. Once I identified a bait sequence that had hits for the most taxa, I used the Multiple Sequence Aligner on BLAST to align the sequences for all taxa. These files are denoted as alpha1_hydra_precursor_align_clean.fa, alpha2_drosophila_align_clean.fa, alpha3_nematostella_align_clean.fa, alpha4_humans_align_clean.fa, alpha5_obricella_align_clean.fa, alpha6_humans_align_clean.fa. 
+I used the BLAST results from the BLAST run with the bait sequence that produced hits for the most taxa. Once I identified a bait sequence that had hits for the most taxa, I used the Multiple Sequence Aligner on BLAST to align the sequences for all taxa. These files are denoted as alpha1_hydra_precursor_align_clean.fa, alpha2_drosophila_align_clean.fa, alpha3_nematostella_align_clean.fa, alpha4_humans_align_clean.fa, alpha5_obricella_align_clean.fa, alpha6_humans_align_clean.fa and are located within each alpha sequence folder. 
 
-I then uploaded these files to the Grace HPC. I then used to infer a tree with IQ-Tree with the script job_animal.sh. I also used the ultrafast bootstrapping on BLAST. This produced many files, including .treefiles that I used to visualize the consensus tree for each simulation on RStudio (finalproject.rmd). 
+Then, I uploaded these files to the Grace HPC. I used these multiple sequence alignments to infer a tree with IQ-Tree with the script job_animal.sh. I also used the ultrafast bootstrapping on BLAST. This produced many files, including .treefiles that I used to visualize the consensus tree for each simulation on RStudio (finalproject.rmd). All of the output files are located in the alpha folders above. 
 
 
 ## Results
