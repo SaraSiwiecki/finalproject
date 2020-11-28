@@ -43,6 +43,8 @@ These phylogenetic analyses will begin to uncover the evolution of collagen IV i
 ## Methods
 To start, I identified taxa to include in the analysis of collagen IV evolution in our most distant animal relatives based off of genomes present in NCBI (Table 1). I used NCBI to identified the genomes of several close unicellular metazoan relatives, such as choanoflagellates and filastereans, and several distant relatives, such as bacteria. For metazoans, I used all published ctenophore genomes, the only published placazoan genome, several published sponge genomes, several cnidarian genomes, and several bilaterian genomes. 
 
+Table 1: Taxa Used for BLAST Searches
+
 ![Table1](FinalProject_Table1.png)
 
 Then, I used BLAST with these genomes and bait sequences from various sequences discussed above. For each alpha chain sequence, I tried about five different bait sequences to run through protein BLAST. I used the following parameters for my protein BLAST searches: automatically adjusted parameters for short input sequences, expect threshold of 10, word size of two, zero max matches in a query range, BLOSUM62 matrix, existence 11 and extension 1 for gap costs, conditional compositional score matrix adjustment, and no filtering or masking. I optimized these parameters to produce the most hits possible since many of these organisms, such as ctenophores, typically have matches that are short and thus difficult to find. 
@@ -105,6 +107,8 @@ Then, I uploaded these files to the Grace HPC. I used these multiple sequence al
 ## Results
 
 For each alpha sequence, I organized the overall results of the BLAST searches into Table 2. 
+
+Table 2: Overall BLAST Results for Each Phyla
 
 ![Table2](FinalProject_Table2.png)
 
