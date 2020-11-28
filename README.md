@@ -41,9 +41,9 @@ In most animals there are six types of collagen IV, called alpha chains (Boudko 
 These phylogenetic analyses will begin to uncover the evolution of collagen IV in our most distant animal relatives. Understanding the emergence of network-forming collagen IV will allow greater insight into the origins of the ECM toolkit, ctenophores, and the transitions to multicellularity.
 
 ## Methods
-To start, I identified taxa to include in the analysis of collagen IV evolution in our most distant animal relatives based off of genomes present in NCBI (Fig. X). I used NCBI to identified the genomes of several close unicellular metazoan relatives, such as choanoflagellates and filastereans, and several distant relatives, such as bacteria. For metazoans, I used all published ctenophore genomes, the only published placazoan genome, several published sponge genomes, several cnidarian genomes, and several bilaterian genomes. 
+To start, I identified taxa to include in the analysis of collagen IV evolution in our most distant animal relatives based off of genomes present in NCBI (Table 1). I used NCBI to identified the genomes of several close unicellular metazoan relatives, such as choanoflagellates and filastereans, and several distant relatives, such as bacteria. For metazoans, I used all published ctenophore genomes, the only published placazoan genome, several published sponge genomes, several cnidarian genomes, and several bilaterian genomes. 
 
-![FigureX](FinalProkect_Table1.png)
+![Table1](FinalProject_Table1.png)
 
 Then, I used BLAST with these genomes and bait sequences from various sequences discussed above. For each alpha chain sequence, I tried about five different bait sequences to run through protein BLAST. I used the following parameters for my protein BLAST searches: automatically adjusted parameters for short input sequences, expect threshold of 10, word size of two, zero max matches in a query range, BLOSUM62 matrix, existence 11 and extension 1 for gap costs, conditional compositional score matrix adjustment, and no filtering or masking. I optimized these parameters to produce the most hits possible since many of these organisms, such as ctenophores, typically have matches that are short and thus difficult to find. 
 
@@ -104,13 +104,14 @@ Then, I uploaded these files to the Grace HPC. I used these multiple sequence al
 
 ## Results
 
-Figure 1: Tree from BLAST using nematostella vectensis alpha-5 sequence 
+For each alpha sequence, I organized the overall results of the BLAST searches into Table 2. 
 
-![Figure1](animal_tree.jpg)
+![Table2](FinalProject_Table2.png)
 
-Newick format: (Drosophila_melanogaster_BT053743.1:5.0485576518,(Amphimedon_queenslandica_XM019998698.1:2.5962504748,((Hydra_vulgaris_XM012710296.1:3.3292460108,Trichoplax_adhaerens_XM002116260.1:3.1753180100)64:1.8018490920,Ephydatia_muelleri_X69818.1:5.1000457493)63:1.3674924680)47:3.3244908050,((Salpingoeca_rosetta_XM004998771.1:1.4935654389,Beroe_forskalii_MG655624.1:0.0026869678)21:0.0002960999,Monosiga_brevicollis_AF538053.1:1.5137278979)15:1.5618986580)
+Legend: Check marks indicate that there were significant hits found. X-marks indicate that no significant hits were found. 
 
-The bootstrap values are quite low so the tree is very variable, but this will likely be improved as I run more analyses and use bait sequences that have matches with higher percentage identities. I also plan to perform a similar analysis as above with more cnidarians, bilaterians, and unicellular relatives to improve the resolution of the tree. I am currently using all available genomes for ctenophores, sponges, and placazoans. 
+I found that conserved sequences for each alpha chain were found in almost all bacteria, choanoflagellates, and metazoan taxa tested. Details for each BLAST search are located in the file BLAST_Updated_Results.xlsx. Particularly, E. coli had hits for all alpha chain sequences and V. cholera and S. aureus each had a few regions homologous to a few of the alpha sequences. Both choanoflagellate species had hits for all alpha chains. The one filasterean tested had hits for only alpha chains 3 and 5. Ctenophores had no hits for any alpha chains. All other metazoans phyla had hits for all alpha chains. For each alpha chain, one porifera species did not have any hits and 1-2 cnidarians did not have any hits. All bilaterians tested had hits for all alpha sequences.
+
 
 
 ## Discussion
