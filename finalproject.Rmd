@@ -1,0 +1,129 @@
+---
+title: "finalproject"
+output: html_document
+---
+
+```{r setup, echo=FALSE, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(ape)
+```
+
+
+## Evaluating the phylogenetics of collagen IV in early animal evolution
+I plan to use BLAST to build sequence alignments of collagen IV nucleotide sequences in early evolution animals to investigate the evolution of collagen IV at the origination of animal multicellularity. I am evaluating multiple taxa in ctenophora, porifera, cnidaraia, and bilateria for these analyses with unicellular relatives of metazoans as outgroups. After sequence alignment, I am using IQ-Tree on Yale's high performance cluster, Grace, to produce trees based on these alignments with bootstrap analyses. In most animals there are six types of collagen IV, called alpha chains. I plan to build trees based on each type of chain. Considering that there are large variations in sequences and there is not great resolution of collagen IV in the most basal animal taxa, such as ctenophores and placazoans, it is difficult to definitely use a specific bait sequence, so I plan try many different bait sequences, including collagen IV from Homo sapiens, Drosophila melanogaster, Hydra vulgaris, and Nemtostella vectensis, to resolve sequence alignments.
+
+Here is the code to fix the headers on the fasta alignments:
+sed -E 's/>gi\|([0-9]+)\|.+\| ([a-zA-Z]+) ([a-zA-Z]+)[\. ].+/>\2_\3_\1/g' alpha1_drosophila_align.fa > alpha1_drosophila_align_clean.fasta
+
+Firstly, I performed BLAST of a Hydra vulgaris collagen IV alpha-1 chain-like bait sequence and aligned sequences from many early animal taxa. 
+
+Organism: Hydra vulgaris
+
+Tax ID: 6087
+
+Accession Number: NP_001296590.1
+
+Here is the tree for this alignment:
+```{r fig.width=7, fig.height=7}
+
+# Insert code here to view the phylogeny
+phy = read.tree("alpha1_hydra_precursor_align_clean.fa.treefile")
+plot(phy)
+nodelabels(phy$node.label)
+
+```
+
+
+
+
+alpha-2 chain:
+
+Organism: Drosophila melanogaster
+
+Gene: Collagen IV alpha-2 sequence
+
+Accession ID: AAB64082.1
+
+```{r fig.width=7, fig.height=7}
+
+# Insert code here to view the phylogeny
+phy = read.tree("alpha2_drosophila_align_clean.fa.treefile")
+plot(phy)
+nodelabels(phy$node.label)
+
+```
+
+alpha-3 chain:
+
+Organism: Nematostella vectensis
+
+Gene: Collagen IV alpha-3 sequence
+
+Accession ID: XP_001639420.1
+
+```{r fig.width=7, fig.height=7}
+
+# Insert code here to view the phylogeny
+phy = read.tree("alpha3_nematostella_align_clean.fa.treefile")
+plot(phy)
+nodelabels(phy$node.label)
+
+```
+
+
+alpha-4 chain:
+
+Organism: Homo sapiens
+
+Gene: Collagen IV alpha-4 precursor sequence 
+
+Accession ID: NP_000083.3
+
+```{r fig.width=7, fig.height=7}
+
+# Insert code here to view the phylogeny
+phy = read.tree("alpha4_humans_align_clean.fa.treefile")
+plot(phy)
+nodelabels(phy$node.label)
+
+```
+
+alpha-5 chain:
+
+Organism: Obricella faveolata
+
+Gene: Collagen IV alpha-5-like sequence
+
+Accession ID: XP_020621459.1
+
+
+```{r fig.width=7, fig.height=7}
+
+# Insert code here to view the phylogeny
+phy = read.tree("alpha5_obricella_align_clean.fa.treefile")
+plot(phy)
+nodelabels(phy$node.label)
+
+```
+
+
+alpha-6 chain:
+
+Organism: Homo sapiens
+
+Gene: Collagen IV alpha-6 sequence
+
+Accession ID: NP_001274687.1
+
+```{r fig.width=7, fig.height=7}
+
+# Insert code here to view the phylogeny
+phy = read.tree("alpha6_humans_align_clean.fa.treefile")
+plot(phy)
+nodelabels(phy$node.label)
+
+```
+
+
+
