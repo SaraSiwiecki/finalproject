@@ -19,7 +19,7 @@ I plan to use published genomes from the National Center for Biotechnology Infor
 These phylogenetic analyses will begin to uncover the evolution of collagen IV in our most distant animal relatives. Understanding the emergence of network-forming collagen IV will allow greater insight into the origins of the ECM toolkit, ctenophores, and the transitions to multicellularity.
 
 ## Methods
-To start, I identified taxa to include in the analysis of collagen IV evolution in our most distant animal relatives based off of genomes present in NCBI (Table 1). I used NCBI to identify the genomes of several close unicellular metazoan relatives, such as choanoflagellates and filastereans, and several distant relatives, such as bacteria. For metazoans, I used all published ctenophore genomes, the only published placazoan genome, several published sponge genomes, several cnidarian genomes, and several bilaterian genomes. The taxa IDs for each taxa I used are listed in BLAST_Results_Updated.xlsx.
+To start, I identified taxa to include in the analysis of collagen IV evolution in our most distant animal relatives based off of genomes present in NCBI (Table 1). I used NCBI to identify the genomes of several close unicellular metazoan relatives, such as choanoflagellates and filastereans, and several distant relatives, such as bacteria. For metazoans, I used all published ctenophore genomes, the only published placazoan genome, several published sponge genomes, several cnidarian genomes, and several bilaterian genomes. The taxon ID for each taxon I used are listed in BLAST_Results_Updated.xlsx.
 
 Table 1: Taxa Used for BLAST Searches
 
@@ -92,14 +92,15 @@ Table 2: Overall BLAST Results for Each Phyla
 
 Legend: Check marks indicate that there were significant hits found. X-marks indicate that no significant hits were found. 
 
-I found that conserved sequences for each alpha chain were found in almost all bacteria, choanoflagellates, and metazoan taxa tested. Details for each BLAST search are located in the file BLAST_Updated_Results.xlsx. Particularly, E. coli had hits for all alpha chain sequences and V. cholera and S. aureus each had a few regions homologous to a few of the alpha sequences. Both choanoflagellate species had hits for all alpha chains. The one filasterean tested had hits for only alpha chains 3 and 5. Ctenophores had no hits for any alpha chains. All other metazoans phyla had hits for all alpha chains. For each alpha chain, one porifera species did not have any hits and 1-2 cnidarians did not have any hits. All bilaterians tested had hits for all alpha sequences.
+I found that conserved sequences for each alpha chain were found in almost all bacteria, choanoflagellates, and metazoan taxa tested. Details for each BLAST search are located in the file BLAST_Updated_Results.xlsx. Particularly, E. coli had hits for all alpha chain sequences and V. cholera and S. aureus each had a few regions homologous to a few of the alpha sequences. Both choanoflagellate species had hits for all alpha chains. The one filasterean tested had hits for only alpha chains 3 and 5. Ctenophores had no hits for any alpha chains. All other metazoan phyla had hits for all alpha chains. For each alpha chain, one porifera species did not have any hits and 1-2 cnidarians did not have any hits. All bilaterians tested had hits for all alpha sequences.
 
-Each consensus tree has been annotated for better visualization. A yellow star indicates a clade of metazoan relatives. A purple star indicates a clade of metazoans. A pink star indicates a metazoan relative. A blue star indicates a metazoan.
+Each consensus tree has been annotated for better visualization. A yellow star indicates a clade of non-metazoan relatives. A purple star indicates a clade of metazoans. A pink star indicates a non-metazoan relative. A blue star indicates a metazoan.
 
 Figure 1: Alpha-1 Consensus Tree
 ![Figure1](FinalProject_Alpha1.png)
 
 Newick format: (Hydra_vulgaris:0.1713970152,((((Daphnia_magna:0.9419617160,Caenorhabditis_elegans:0.9797908939)65:0.1784756803,(Drosophila_melanogaster:0.8752686721,(Homo_sapiens:0.5098198313,Bos_taurus:0.4424193257)100:0.4735022784)63:0.0794449062)42:0.1206588004,Nematostella_vectensis:1.0597769266)81:0.1542005407,(Trichoplax_adhaerens:0.9906966175,(Amphimedon_queenslandica:0.9748242007,Ephydatia_muelleri:1.1247222444)75:0.2660820130)36:0.1310544309)59:0.2109953454,((Salpingoeca_rosetta:2.0721888405,Monosiga_brevicollis:1.5574509070)80:0.2914715817,Escherichia_coli:1.6175463258)35:0.0778803655);
+
 
 Figure 2: Alpha-2 Consensus Tree
 ![Figure2](FinalProject_Alpha2.png)
