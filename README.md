@@ -1,6 +1,6 @@
 # Phylogenetic Biology - Final Project
 
-# Investigating collagen type IV phylogenetics in our most distant animal relatives to gain insight on extracellular matrix development
+# Investigating collagen type IV phylogenetics in our most distant animal relatives to gain insight on extracellular matrix evolution
 
 ## Introduction and Goals
 
@@ -19,13 +19,13 @@ I plan to use published genomes from the National Center for Biotechnology Infor
 These phylogenetic analyses will begin to uncover the evolution of collagen IV in our most distant animal relatives. Understanding the emergence of network-forming collagen IV will allow greater insight into the origins of the ECM toolkit, ctenophores, and the transitions to multicellularity.
 
 ## Methods
-To start, I identified taxa to include in the analysis of collagen IV evolution in our most distant animal relatives based off of genomes present in NCBI (Table 1). I used NCBI to identify the genomes of several close unicellular metazoan relatives, such as choanoflagellates and filastereans, and several distant relatives, such as bacteria. For metazoans, I used all published ctenophore genomes, the only published placazoan genome, several published sponge genomes, several cnidarian genomes, and several bilaterian genomes. 
+To start, I identified taxa to include in the analysis of collagen IV evolution in our most distant animal relatives based off of genomes present in NCBI (Table 1). I used NCBI to identify the genomes of several close unicellular metazoan relatives, such as choanoflagellates and filastereans, and several distant relatives, such as bacteria. For metazoans, I used all published ctenophore genomes, the only published placazoan genome, several published sponge genomes, several cnidarian genomes, and several bilaterian genomes. The taxa IDs for each taxa I used are listed in BLAST_Results_Updated.xlsx.
 
 Table 1: Taxa Used for BLAST Searches
 
 ![Table1](FinalProject_Table1.png)
 
-Then, I used BLAST with these genomes and bait sequences from various sequences discussed above. For each alpha chain sequence, I tried about five different bait sequences to run through protein BLAST. I used the following parameters for my protein BLAST searches: automatically adjusted parameters for short input sequences, expect threshold of 10, word size of two, zero max matches in a query range, BLOSUM62 matrix, existence 11 and extension 1 for gap costs, conditional compositional score matrix adjustment, and no filtering or masking. I optimized these parameters to produce the most hits possible since many of these organisms, such as ctenophores, typically have matches that are short and thus difficult to find. 
+Then, I used BLAST with these genomes and bait sequences from various sequences discussed above. For each alpha chain sequence, I tried about five different bait sequences to run through protein BLAST. I used the following parameters for my protein BLAST searches: automatically adjusted parameters for short input sequences, expect threshold of 10, word size of two, zero max matches in a query range, BLOSUM62 matrix, existence 11 and extension 1 for gap costs, conditional compositional score matrix adjustment, and no filtering or masking. I optimized these parameters to produce the most hits possible since many of these organisms, such as ctenophores, typically have matches that are short and thus difficult to locate. 
 
 For each bait sequence, I documented how many taxa produced hits through the BLAST search. A significant hit was considered a hit with an E value of <0.0001. The data for the bait sequences used and the number of taxa with hits for each bait sequence is documented in the file BLAST_Results_Updated.xlsx. The information for each bait sequence that I used for protein BLAST that was then used to build a tree using IQ-Tree is listed below:
 
@@ -37,7 +37,7 @@ Gene: Collagen IV alpha-1 chain precursor
 
 Accession ID: NP_001296590.1
 
-For the alpha-2 chain, I performed BLAST with collagen IV alpha-2 chains from many bait sequences again, including Homo sapiens, Drosophila melanogaster, Mus musculus, and Hydra vulgaris. I found the collagen type IV alpha-2 chain sequence from Drosophila melanogaster (a bilaterian) to have hits with the most taxa, so I used those results to make a tree.
+For the alpha-2 chain, I performed BLAST with collagen IV alpha-2 chains from many bait sequences, including Homo sapiens, Drosophila melanogaster, Mus musculus, and Hydra vulgaris. I found the collagen type IV alpha-2 chain sequence from Drosophila melanogaster (a bilaterian) to have hits with the most taxa, so I used those results to make a tree.
 
 Organism: Drosophila melanogaster
 
@@ -77,9 +77,9 @@ Gene: Collagen IV alpha-6 chain
 
 Accession ID: NP_001274687.1
 
-I used the BLAST results from the BLAST run with the bait sequence that produced hits for the most taxa. Once I identified a bait sequence that had hits for the most taxa, I used the Multiple Sequence Aligner on BLAST to align the sequences for all taxa. These files are denoted as alpha1_hydra_precursor_align_clean.fa, alpha2_drosophila_align_clean.fa, alpha3_nematostella_align_clean.fa, alpha4_humans_align_clean.fa, alpha5_obricella_align_clean.fa, alpha6_humans_align_clean.fa and are located within each alpha sequence folder. 
+Once I identified these bait sequences that had hits for the most taxa for each alpha chain, I used the Multiple Sequence Alignment Viewer (MSA Viewer) on BLAST to align the sequences for all taxa. These files are denoted as alpha1_hydra_precursor_align_clean.fa, alpha2_drosophila_align_clean.fa, alpha3_nematostella_align_clean.fa, alpha4_humans_align_clean.fa, alpha5_obricella_align_clean.fa, and alpha6_humans_align_clean.fa and are located within each alpha sequence folder. 
 
-Then, I uploaded these files to the Grace HPC. I used these multiple sequence alignments to infer a tree with IQ-Tree with the script job_animal.sh. I also used the ultrafast bootstrapping on BLAST. This produced many files, including .treefiles that I used to visualize the consensus tree for each simulation on RStudio (finalproject.rmd). All of the output files are located in the alpha folders above. 
+Then, I uploaded these files to the Grace HPC. I used these multiple sequence alignments to infer a tree using IQ-Tree with the script job_animal.sh. I also used the ultrafast bootstrapping on BLAST. This produced many files, including .treefiles that I used to visualize the consensus tree for each simulation on RStudio (finalproject.rmd). All of the output files are located in the alpha folders above. 
 
 
 ## Results
@@ -100,7 +100,6 @@ Figure 2: Alpha-1 Consensus Tree
 ![Figure2](FinalProject_Alpha1.png)
 
 Newick format: (Hydra_vulgaris:0.1713970152,((((Daphnia_magna:0.9419617160,Caenorhabditis_elegans:0.9797908939)65:0.1784756803,(Drosophila_melanogaster:0.8752686721,(Homo_sapiens:0.5098198313,Bos_taurus:0.4424193257)100:0.4735022784)63:0.0794449062)42:0.1206588004,Nematostella_vectensis:1.0597769266)81:0.1542005407,(Trichoplax_adhaerens:0.9906966175,(Amphimedon_queenslandica:0.9748242007,Ephydatia_muelleri:1.1247222444)75:0.2660820130)36:0.1310544309)59:0.2109953454,((Salpingoeca_rosetta:2.0721888405,Monosiga_brevicollis:1.5574509070)80:0.2914715817,Escherichia_coli:1.6175463258)35:0.0778803655);
-
 
 Figure 3: Alpha-2 Consensus Tree
 ![Figure3](FinalProject_Alpha2.png)
