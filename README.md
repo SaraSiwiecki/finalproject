@@ -96,37 +96,37 @@ I found that conserved sequences for each alpha chain were found in almost all b
 
 Each consensus tree has been annotated for better visualization. A yellow star indicates a clade of metazoan relatives. A purple star indicates a clade of metazoans. A pink star indicates a metazoan relative. A blue star indicates a metazoan.
 
-Figure 2: Alpha-1 Consensus Tree
-![Figure2](FinalProject_Alpha1.png)
+Figure 1: Alpha-1 Consensus Tree
+![Figure1](FinalProject_Alpha1.png)
 
 Newick format: (Hydra_vulgaris:0.1713970152,((((Daphnia_magna:0.9419617160,Caenorhabditis_elegans:0.9797908939)65:0.1784756803,(Drosophila_melanogaster:0.8752686721,(Homo_sapiens:0.5098198313,Bos_taurus:0.4424193257)100:0.4735022784)63:0.0794449062)42:0.1206588004,Nematostella_vectensis:1.0597769266)81:0.1542005407,(Trichoplax_adhaerens:0.9906966175,(Amphimedon_queenslandica:0.9748242007,Ephydatia_muelleri:1.1247222444)75:0.2660820130)36:0.1310544309)59:0.2109953454,((Salpingoeca_rosetta:2.0721888405,Monosiga_brevicollis:1.5574509070)80:0.2914715817,Escherichia_coli:1.6175463258)35:0.0778803655);
 
-Figure 3: Alpha-2 Consensus Tree
-![Figure3](FinalProject_Alpha2.png)
+Figure 2: Alpha-2 Consensus Tree
+![Figure2](FinalProject_Alpha2.png)
 
 Newick format: (Drosophila_melanogaster:0.2979358989,((((Daphnia_magna:0.8604466938,Caenorhabditis_elegans:0.9729102391)49:0.0998348944,((Homo_sapiens:0.4234095317,Bos_taurus:0.5266607318)100:0.5774104954,Nematostella_vectensis:0.9642874307)63:0.1777503750)81:0.1239234637,Hydra_vulgaris:1.0812799807)53:0.0692707136,((Trichoplax_adhaerens:0.9801635837,Amphimedon_queenslandica:1.1744562263)48:0.0443520822,(Ephydatia_muelleri:0.8988098343,Kudoa_iwatai:1.3441300874)93:0.5584842490)48:0.2124479122)56:0.1215505365,(((Salpingoeca_rosetta:0.9372211959,Monosiga_brevicollis:1.1284713721)97:0.5740943034,Escherichia_coli:1.6205375836)44:0.0000026037,Staphylococcus_aureus:1.4330884072)44:0.2071780231);
 
 
-Figure 4: Alpha-3 Consensus Tree
-![Figure4](FinalProject_Alpha3.png)
+Figure 3: Alpha-3 Consensus Tree
+![Figure3](FinalProject_Alpha3.png)
 
 Newick format: (Nematostella_vectensis:0.0000020860,((Hydra_vulgaris:0.1008123704,(Kudoa_iwatai:0.4214374960,((Daphnia_magna:1.2243798652,Caenorhabditis_elegans:0.8212546807)66:0.4587203832,Staphylococcus_aureus:1.9205740213)40:0.0047498236)57:0.1977605811)67:0.2057487311,(((((Salpingoeca_rosetta:0.3421521577,(Amphimedon_queenslandica:1.7055856938,((Trichoplax_adhaerens:1.6481464876,Escherichia_coli:0.0477386538)80:0.5068015945,Vibrio_cholerae:0.6733145932)55:0.1655397901)37:0.1727752879)45:0.2748968876,Monosiga_brevicollis:1.9338676437)50:0.3978180152,Bos_taurus:1.2768833855)19:0.1700194499,(Drosophila_melanogaster:1.6282433547,Ephydatia_muelleri:0.4187759820)17:0.3736191222)54:0.4476784345,Homo_sapiens:2.5131727153)40:0.0533249808)62:0.0164553855,Capsaspora_owczarzaki:2.0951130106);
 
 
-Figure 5: Alpha-4 Consensus Tree
-![Figure5](FinalProject_Alpha4.png)
+Figure 4: Alpha-4 Consensus Tree
+![Figure4](FinalProject_Alpha4.png)
 
 Newick format: (Homo_sapiens:0.0000021997,(Bos_taurus:0.2380891685,((((Daphnia_magna:1.1255452984,Drosophila_melanogaster:1.3506374971)89:0.1921227840,Caenorhabditis_elegans:1.1440659395)90:0.2000307317,((Hydra_vulgaris:1.1776840543,((Trichoplax_adhaerens:1.2062471385,Escherichia_coli:1.8826818051)46:0.1759326653,Nematostella_vectensis:0.7636341611)46:0.1848507074)42:0.1490016982,Ephydatia_muelleri:1.5439463210)33:0.0955129814)48:0.3088583553,(Amphimedon_queenslandica:1.6468517526,(Salpingoeca_rosetta:1.4249550644,Monosiga_brevicollis:1.9665664629)79:0.2077994096)41:0.3478957116)89:0.1593179990)82:0.0424950849,Actinia_equina:3.7383542075);
 
 
-Figure 6: Alpha-5 Consensus Tree
-![Figure6](FinalProject_Alpha5.png)
+Figure 5: Alpha-5 Consensus Tree
+![Figure5](FinalProject_Alpha5.png)
 
 Newick format: (Nematostella_vectensis:0.0969577636,(Hydra_vulgaris:0.0797313929,Kudoa_iwatai:0.5909685883)86:0.1462258713,((((((Salpingoeca_rosetta:0.4469441755,Staphylococcus_aureus:3.6465811937)77:0.5665464112,((Homo_sapiens:1.2053834256,Trichoplax_adhaerens:2.3027240403)60:0.4480594701,Bos_taurus:0.4502330844)76:0.8783239463)24:0.4048848899,((Monosiga_brevicollis:2.7930583742,Caenorhabditis_elegans:0.0621298335)79:0.9246411334,(Drosophila_melanogaster:1.5560432213,Ephydatia_muelleri:0.9981157658)89:1.0576390740)30:0.3791056823)12:0.0722226420,(Escherichia_coli:1.1766095633,Amphimedon_queenslandica:1.0875656762)30:0.7928493648)47:0.2362319843,Daphnia_magna:2.2404921579)46:0.1262377719,Capsaspora_owczarzaki:3.2705201026)41:0.0000026307);
 
 
-Figure 7: Alpha-6 Consensus Tree
-![Figure7](FinalProject_Alpha6.png)
+Figure 6: Alpha-6 Consensus Tree
+![Figure6](FinalProject_Alpha6.png)
 
 Newick format: (Homo_sapiens:0.0304658590,Bos_taurus:0.1447408944,((((Drosophila_melanogaster:0.9565874973,(Hydra_vulgaris:0.8630938779,(Trichoplax_adhaerens:0.9308319049,(Amphimedon_queenslandica:0.8209880869,Escherichia_coli:1.3917077379)63:0.2288603471)57:0.1529153456)57:0.1830639264)32:0.1304525376,((Caenorhabditis_elegans:0.9166937517,Nematostella_vectensis:0.9199340386)53:0.1131082284,Daphnia_magna:0.9572052339)35:0.0483315753)30:0.0920540652,(Monosiga_brevicollis:1.4478701315,Salpingoeca_rosetta:1.4149434588)78:0.4205872167)74:0.1064914900,Ephydatia_muelleri:1.2706075272)94:0.1637379011);
 
@@ -140,9 +140,9 @@ From the initial evaluation of BLAST results described in Table 2, it appears th
 Even more suprisingly, similar regions to collagen IV alpha chains were found in our most recent metazoan relatives, two out of two choanoflagellate species tested had similar regions to all alpha chains and the one filasterean species tested had similar regions to alpha chains 3 and 5. Further, 2/3 of the bacteria species tested also had similar regions to all alpha chains. This indicates that either collagen IV homologous regions must have existed in a very distant most recent common ancestor of bacteria, recent metazoan relatives, and metazoans, or that this specific collagen IV sequence evolved independently several times. This resolves some questions about the composition of the bulk ECM in metazoans. Considering that collagen IV sequences appear to be quite ancient and that both ctenophores and other metazoans contain bulk ECM but there appears to be variation in collagen IV presence, (1) the traditional collagen IV sequence does not seem to be necessary for bulk ECM development and therefore the bulk ECM did not result from the development of bulk collagen IV and (2) the bulk ECM content likely has variability between metazoans. Further studies on the compisition and function of the bulk ECM in metazoans is needed to verify these hypotheses. This also raises further questions about what caused the bulk ECM to develop in metazoans but not in other kingdoms? It appears that there must be some conserved trait, but that collagen IV is not that trait. 
 
 ### Collagen IV alpha chain phylogenetics
-From the BLAST results, it seems that there are two main evolutionary patterns among the collagen IV alpha chains. Based on the trees of alpha chains 1 (Fig. 2), 2 (Fig. 3), and 6 (Fig. 7), there is a clear branching of the tree that separates metazoans and metazoan relatives into two separate clades, denoted by purple and yellow stars. These branches in the tree have bootstrap values that are quite low, ranging from 30-100, so this tree should not be perceived as totally correct since the potential branch points are quite variable. However, the branches closest to the tips where the metazoans and metazoan relatives are further branched off do have higher bootsrap values from 70-100, so the divergence of metazoans and metazoan relatives seems somewhat likely. This indicates that there may be a clear difference between similar regions of these alpha chains between metazoans and metazoan relatives, suggesting genetic divergences. It may be possible that these alpha chains have special sequences allowing for bulk ECM formation compared to the metazoan relatives that do not form bulk ECMs. Further studies into the specific sequences that are conserved in metazoan relatives versus metazoans would be interesting to discover any association between metazoan specific-alpha chain sequence conservation.
+From the BLAST results, it seems that there are two main evolutionary patterns among the collagen IV alpha chains. Based on the trees of alpha chains 1 (Fig. 1), 2 (Fig. 2), and 6 (Fig. 6), there is a clear branching of the tree that separates metazoans and metazoan relatives into two separate clades, denoted by purple and yellow stars. These branches in the tree have bootstrap values that are quite low, ranging from 30-100, so this tree should not be perceived as totally correct since the potential branch points are quite variable. However, the branches closest to the tips where the metazoans and metazoan relatives are further branched off do have higher bootsrap values from 70-100, so the divergence of metazoans and metazoan relatives seems somewhat likely. This indicates that there may be a clear difference between similar regions of these alpha chains between metazoans and metazoan relatives, suggesting genetic divergences. It may be possible that these alpha chains have special sequences allowing for bulk ECM formation compared to the metazoan relatives that do not form bulk ECMs. Further studies into the specific sequences that are conserved in metazoan relatives versus metazoans would be interesting to discover any association between metazoan specific-alpha chain sequence conservation.
 
-Conversely, alpha chains 3 (Fig. 4), 4 (Fig. 5), and 5 (Fig. 6), seem to have a much more variable branching. There do not appear to be many patterns that group metazoans and metazoan relatives. In addition, the bootsrap values appear to be overall lower compared to alpha chains 1, 2, and 6, where 3, 4, and 5 range from 12-90, showing that there is much more variation in branching and not high confidence in these trees in general. This suggests that alpha chains 3, 4, and 5 don't have clear differences between metazoans and metazoan relatives and that similar genetic elements for these alpha chains may exist throughout both metazoans and metazoan relatives. These alpha chains are likely not causing the formation of bulk ECM since they are found in organisms that have and do not have bulk ECM. 
+Conversely, alpha chains 3 (Fig. 3), 4 (Fig. 4), and 5 (Fig. 5), seem to have a much more variable branching. There do not appear to be many patterns that group metazoans and metazoan relatives. In addition, the bootsrap values appear to be overall lower compared to alpha chains 1, 2, and 6, where 3, 4, and 5 range from 12-90, showing that there is much more variation in branching and not high confidence in these trees in general. This suggests that alpha chains 3, 4, and 5 don't have clear differences between metazoans and metazoan relatives and that similar genetic elements for these alpha chains may exist throughout both metazoans and metazoan relatives. These alpha chains are likely not causing the formation of bulk ECM since they are found in organisms that have and do not have bulk ECM. 
 
 Since all of these trees have low bootstrap values, further studies should be done with more taxa, more consistent bait sequence usage (i.e. using the same organism as the source for bait sequences all alpha chains), and better and more outgroups. Although, the biggest difficulty in implementing my analyses was finding significant hits and getting high quality trees, so this would take a significant amount of time to implement more taxa and more proper bait sequences. Using computational heuristics to filter through bait sequences would help improve the efficiency of these analyses. It would also be interesting to do more quantitative analyses, such as comparative genomic analyses, and to calculate evolutionary rates to compare the alpha chains. 
 
